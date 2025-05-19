@@ -15,7 +15,7 @@ const Layout = ({ toggleTheme, isRed }: LayoutProps) => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const location = useLocation();
 
-  useEffect(() = = {
+  useEffect(() => {
     const timer = setInterval(() => setCurrentTime(new Date()), 1000);
     return () => clearInterval(timer);
   }, []);
